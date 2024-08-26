@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 
 <head>
@@ -1870,3 +1871,173 @@
 
 
 </html>
+=======
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : Low-Down 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20131117
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>::: NIU - CSIE VoIP Lab ~ Home :::</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="web.css" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+<link href="mycss.css" rel="stylesheet" type="text/css" media="all" />
+<link rel ="stylesheet" href ="flexslider.css" type ="text/css">
+<script src ="jmin.js"></script>
+<script src ="js/jquery.flexslider.js"></script>
+
+<!--[if IE 6]>
+<link href="default_ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->  
+</head>
+<body onLoad="startclock()">
+<div id="wrapper">
+	<div id="header-wrapper">
+		<div id="header" class="container">
+			<div id="logo">
+				<h1>VoIPLab</h1>
+				<p>建立於2007/08</a></p>
+			</div>
+			<div id="social">
+				<div id="whatday" class="time">none</div>
+				<form name="clock">
+					<input name="thetime" class="time" size="10">
+				</form>
+				<!-- <ul class="contact">
+					<li><a href="#" class="icon icon-twitter"><span>Twitter</span></a></li>
+					<li><a href="#" class="icon icon-facebook"><span></span></a></li>
+					<li><a href="#" class="icon icon-dribbble"><span>Pinterest</span></a></li>
+					<li><a href="#" class="icon icon-tumblr"><span>Google+</span></a></li>
+					<li><a href="#" class="icon icon-rss"><span>Pinterest</span></a></li>
+				</ul> -->
+			</div>
+		</div>
+		<div id="menu" class="container">
+			<ul>
+				<li class="current_page_item"><a style="font-size: 20px;" href="index.html" accesskey="1" title="">首頁</a></li>
+				<li><a style="font-size: 20px;" href="Introduction.html" accesskey="1" title="">簡介</a></li>
+				<li><a style="font-size: 20px;" href="Advisor.html" accesskey="2" title="">指導教授</a></li>
+				<li><a style="font-size: 20px;" href="Member.html" accesskey="3" title="">成員</a></li>
+				<li><a style="font-size: 20px;" href="Publications.html" accesskey="4" title="">發表成果</a></li>
+				<li><a style="font-size: 20px;" href="Research.html" accesskey="5" title="">近期研究</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="page" class="container">
+		<div class="column5">
+			<div class="title">
+				<div class ="flexslider" style="width: 70%;margin:0 auto;">
+					<ul class ="slides">
+					  <li>
+						<a href="https://www.niu.edu.tw/files/14-1000-28031,r43-1.php"><img src ="images/CHTimg.jpg"></a>
+					  </li>
+					  <li>
+						<a href="https://www.mobilehero.com/review/2019/item/894-c190116.html"><img src ="images/mobile.jpg"></a>
+					  </li>
+					  <li>
+						<img src ="images/class.png">
+					  </li>
+					</ul>
+				  </div>
+			</div>
+		</div>
+			
+		<div id="portfolio-wrapper">
+			<div id="portfolio" class="container">
+				<div class="title">
+					<h2><b>109 學年度下學期 陳懷恩教授開授課程</b></h2>
+					<table id="classwen" style="margin:20px auto;font-size: 1.2em;font-family: 'Source Sans Pro', sans-serif;">
+						<tr>
+							<td width="10%" height="20" align="right" valign="middle"><b>1.</b></td>
+							<td width="20%" height="20" align="left" valign="middle"><b>機率與統計</b></td>
+							<td width="4%" align="left" valign="middle"><b>週四</b></td>
+							<td width="5%" align="left" valign="middle"><b>- 5.6.7</b></td>
+							<td width="10%" height="20" align="left" valign="middle"><b>&rarr; 教 103</b></td>
+						</tr>
+						<tr>
+							<td width="10%" height="20" align="right" valign="middle"><b>2.</b></td>
+							<td width="20%" height="20" align="left" valign="middle"><b>行動通訊</b></td>
+							<td width="4%" align="left" valign="middle"><b>週日</b></td>
+							<td width="5%" align="left" valign="middle"><b>- 2.3.4</b></td>
+							<td width="10%" height="20" align="left" valign="middle"><b>&rarr; 教 416</b></td>
+						</tr>
+					</table>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+<div id="footer">
+	<p>&copy; Copyright ©2020 NIU VoIP Lab</p>
+</div>
+</body>
+<script type="text/javascript">
+var useragent = navigator.userAgent;
+useragent = useragent.toLowerCase();
+var classwen = document.getElementById("classwen");
+if( useragent.indexOf('iphone') != -1 ){
+	classwen.style.fontSize="1em";
+} 
+// location.replace("https://voiplab.niu.edu.tw/newweb/indexphone.html");//iphone
+// if( useragent.indexOf('iphone') != -1 ) location.replace("http://localhost:8899/indexphone.html");
+</script>
+<script language="JavaScript">
+	//time----------------------------------------------
+	var timerID = null;
+	var timerRunning = false;
+	function stopclock (){
+	if(timerRunning)
+	clearTimeout(timerID);
+	timerRunning = false;}
+	function startclock () {
+	stopclock();
+	showtime();}
+
+	function showtime () {
+	var now = new Date();
+	var hours = now.getHours();
+	var minutes = now.getMinutes();
+	var seconds = now.getSeconds()
+	var timeValue = "" +((hours >= 12) ? "下午 " : "上午 " )
+	timeValue += ((hours >12) ? hours -12 :hours)
+	timeValue += ((minutes < 10) ? ":0" : ":") + minutes
+	timeValue += ((seconds < 10) ? ":0" : ":") + seconds
+	document.clock.thetime.value = timeValue;
+	timerID = setTimeout("showtime()",1000);
+	timerRunning = true;}
+
+	//whichday-----------------------------------------------
+	var whatday = document.getElementById("whatday");
+	var enabled = 0; today = new Date();
+	var day; var date;
+	if(today.getDay()==0) day = "週日."
+	if(today.getDay()==1) day = "週一."
+	if(today.getDay()==2) day = "週二."
+	if(today.getDay()==3) day = "週三."
+	if(today.getDay()==4) day = "週四."
+	if(today.getDay()==5) day = "週五."
+	if(today.getDay()==6) day = "週六."
+	document.fgColor = "000000";
+	date = (today.getFullYear()) + "." + (today.getMonth() + 1 ) + "." + today.getDate() + " " + day +"";
+	whatday.innerHTML=date;
+</script>  
+<script type ="text/javascript" charset ="utf-8">
+	$(window).load(function(){
+	  $('.flexslider').flexslider();
+	});
+</script>
+</html>
+>>>>>>> d41e1c7e48a22b60b54cdb754b73722af7e6d0a3
