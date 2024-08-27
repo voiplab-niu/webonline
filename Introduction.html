@@ -20,7 +20,9 @@ Released   : 20131117
 <link href="default.css" rel="stylesheet" type="text/css" media="all" />
 <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
 <link href="mycss.css" rel="stylesheet" type="text/css" media="all" />
-<link rel ="stylesheet" href ="flexslider.css" type ="text/css">
+<link href ="footer.css" rel ="stylesheet" type ="text/css">
+<link href ="flexslider.css" rel ="stylesheet" type ="text/css">
+<link rel ="icon"type="image/x-icon"href="images/voip.ico"/>
 <script src ="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 <script src ="js/jquery.flexslider.js"></script>
 
@@ -33,7 +35,7 @@ Released   : 20131117
 	<div id="header-wrapper">
 		<div id="header" class="container">
 			<div id="logo">
-				<h1>VoIPLab</h1>
+				<h1><img src ="images/voipo.png" width="50" height="55" >VoIPLab</h1>
 				<p>建立於2007/08</a></p>
 			</div>
 			<div id="social">
@@ -57,7 +59,8 @@ Released   : 20131117
 				<li><a style="font-size: 20px;" href="Advisor.html" accesskey="2" title="">指導教授</a></li>
 				<li><a style="font-size: 20px;" href="Member.html" accesskey="3" title="">成員</a></li>
 				<li><a style="font-size: 20px;" href="Publications.html" accesskey="4" title="">發表成果</a></li>
-				<li><a style="font-size: 20px;" href="Research.html" accesskey="5" title="">近期研究</a></li>
+				<li><a style="font-size: 20px;" href="Research.html" accesskey="5" title="">計畫與成果展示</a></li>
+				<li><a style="font-size: 20px;" href="video.html" accesskey="5" title="">影音專區</a></li>
 			</ul>
 		</div>
 	</div>
@@ -67,6 +70,12 @@ Released   : 20131117
 				<div style="font-size: 20px;color:rgb(0, 0, 0);">本實驗室成立於96年8月，位於<strong>格致大樓三樓 E314</strong>，由<strong>陳懷恩教授</strong>指導，研究方向為網路系統實作與效能分析、通訊協定轉換機制設計，以及行動通訊應用服務之研發。</div>
 			</div>
 		</div>
+		<div style="width: 80%;margin:0 auto;font-size: 30px;color:rgb(0, 89, 255);font-weight:bold;">介紹影片</div>
+		<div style="width: 80%;margin:0 auto;font-size: 30px;color:rgb(0, 89, 255);font-weight:bold;">	
+		    <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/f5U2ezW1y6Y?si=8-p9RgfczhM5Dfnp" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+		</div>		
 		<div style="width: 80%;margin:0 auto;font-size: 30px;color:rgb(0, 89, 255);font-weight:bold;">硬體設備</div>
 		<div style="width: 80%;margin:0 auto;">
 			<table width="100%" style="font-family: Microsoft JhengHei;font-size: 20px;border:8px #FFD382 groove;" border="1" cellpadding="10" border='0'>
@@ -104,8 +113,43 @@ Released   : 20131117
 			</table>
 		</div>
 	</div>
-<div id="footer">
-	<p>&copy; Copyright ©2020 NIU VoIP Lab</p>
+<!-- Footer -->
+<div id="footer" class="footer" style="background-color: #f8f8f8; padding: 20px; font-family: 'Source Sans Pro', sans-serif; text-align: center; font-size: 1em;">
+    <div class="footer-content" style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
+        <!-- 文字內容 -->
+<div class="footer-text-content" style="flex: 1; padding-right: 20px; text-align: left;">
+    <p class="footer-text" style="margin: 10px 0; font-size: 1.1em; line-height: 1.5;">
+        本網站著作權屬於宜蘭大學 資訊工程學系 VoIP Lab，請詳見:
+        <a class="footer-button" href="use.html" style="color: #0066cc; text-decoration: none;">使用規則</a>
+    </p>
+    <p class="footer-text" style="margin: 10px 0; font-size: 1.1em; line-height: 1.5;">
+        地址：260宜蘭縣宜蘭市神農路一段1號 格致大樓，請詳見:
+        <a class="footer-button" href="map.html" style="color: #0066cc; text-decoration: none;">宜大校園地圖</a>
+    </p>
+    <p class="footer-contact" style="margin: 10px 0; font-size: 1.1em; line-height: 1.5;">
+        <span>電話：(03) 935-7400, 0972-570030 分機7315</span>
+    </p>
+    <p class="footer-contact" style="margin: 10px 0; font-size: 1.1em; line-height: 1.5;">
+        <span>Email: <a href="mailto:voiplab.niu@gmail.com" style="color: #0066cc; text-decoration: none;">voiplab.niu@gmail.com</a></span>
+    </p>
+</div>
+
+        <!-- Google 地圖嵌入 -->
+        <div class="footer-map" style="flex: 1;">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d905.8637026250477!2d121.74487616074191!3d24.745590631761317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3467e53784610ea7%3A0x2b30194cdd5ff11c!2z5ZyL56uL5a6c6Jit5aSn5a246Zu75qmf6LOH6KiK5a246Zmi!5e0!3m2!1szh-TW!2stw!4v1724739813598!5m2!1szh-TW!2stw" 
+                width="100%" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>	
+    </div> 
+	<p class="footer-address" style="margin: 10px 0; color: #666;">
+       &copy; Copyright 2024 NIU VoIP Lab. 建立於 2007/08
+    </p>	
 </div>
 </body>
 <script language="JavaScript">

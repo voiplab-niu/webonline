@@ -20,25 +20,12 @@ Released   : 20131117
 <link href="default.css" rel="stylesheet" type="text/css" media="all" />
 <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
 <link href="mycss.css" rel="stylesheet" type="text/css" media="all" />
-<link rel ="stylesheet" href ="flexslider.css" type ="text/css">
+<link href="footer.css" rel="stylesheet" type="text/css" media="all" />
+<link href ="flexslider.css" rel ="stylesheet" type ="text/css">
+<link rel ="icon"type="image/x-icon"href="images/voip.ico"/>
 <script src ="jmin.js"></script>
 <script src ="js/jquery.flexslider.js"></script>
-<style>
-    .video-container {
-        position: relative;
-        width: 100%;
-        padding-bottom: 60%; /* 16:9 aspect ratio */
-        height: 0;
-        overflow: hidden;
-    }
-    .video-container iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-</style>
+<script src="https://kit.fontawesome.com/698a46b724.js" crossorigin="anonymous"></script>
 
 <!--[if IE 6]>
 <link href="default_ie6.css" rel="stylesheet" type="text/css" />
@@ -49,7 +36,7 @@ Released   : 20131117
 	<div id="header-wrapper">
 		<div id="header" class="container">
 			<div id="logo">
-				<h1>VoIPLab</h1>
+				<h1><img src ="images/voipo.png" width="50" height="55" >VoIPLab</h1>
 				<p>建立於2007/08</a></p>
 			</div>
 			<div id="social">
@@ -73,7 +60,8 @@ Released   : 20131117
 				<li><a style="font-size: 20px;" href="Advisor.html" accesskey="2" title="">指導教授</a></li>
 				<li><a style="font-size: 20px;" href="Member.html" accesskey="3" title="">成員</a></li>
 				<li><a style="font-size: 20px;" href="Publications.html" accesskey="4" title="">發表成果</a></li>
-				<li><a style="font-size: 20px;" href="Research.html" accesskey="5" title="">近期研究</a></li>
+				<li><a style="font-size: 20px;" href="Research.html" accesskey="5" title="">計畫與成果展示</a></li>
+				<li><a style="font-size: 20px;" href="video.html" accesskey="5" title="">影音專區</a></li>
 			</ul>
 		</div>
 	</div>
@@ -83,9 +71,7 @@ Released   : 20131117
 				<div class ="flexslider" style="width: 70%;margin:0 auto;">
 					<ul class ="slides">
 					  <li>
-					    <div class="video-container">
-                          <iframe src="https://www.youtube.com/embed/-Bk2UwvA_8Y" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-                        </div>
+					    <a><img src ="images/S__36487176.jpg"></a>
 					  </li>
 					  <li>
 						<a href="https://www.e-land.gov.tw/News_Content.aspx?n=770C4B84956BD13B&s=86D54DD51374AF2C"><img src ="images/2024_1.jpg"></a>
@@ -97,26 +83,33 @@ Released   : 20131117
 				  </div>
 			</div>
 		</div>
-			
-		<div id="portfolio-wrapper">
-			<div id="portfolio" class="container">
-				<div class="title">
-					<h2><b>113 學年度上學期 陳懷恩教授開授課程</b></h2>
-					<table id="classwen" style="margin:20px auto;font-size: 1.2em;font-family: 'Source Sans Pro', sans-serif;">
-						<tr>
-							<td width="10%" height="20" align="right" valign="middle"><b>1.</b></td>
-							<td width="20%" height="20" align="left" valign="middle"><b>網際網路電話系統</b></td>
-							<td width="4%" align="left" valign="middle"><b>週三</b></td>
-							<td width="5%" align="left" valign="middle"><b>- 2.3.4 節</b></td>
-						   <!-- <td width="10%" height="20" align="left" valign="middle"><b>&rarr; 教 103</b></td>-->
-						</tr>
-					</table>
-				</div>
-				
-			</div>
-		</div>
 	</div>
-	
+	<div id="portfolio-wrapper" style="padding: 40px 0;">
+    <div id="portfolio" class="container" style="max-width: 800px; margin: 0 auto;">
+        <div class="title" style="text-align: center; margin-bottom: 30px;">
+            <h2 style="font-size: 1.8em; color: #333;"><b>113 學年度上學期 陳懷恩教授開授課程</b></h2>
+        </div>
+        <table id="classwen" style="margin: 0 auto; font-size: 1.2em; font-family: 'Source Sans Pro', sans-serif; width: 100%;">
+            <tr>
+                <td width="10%" height="40" align="center" valign="middle" style="padding: 8px;"><b>1.</b></td>
+                <td width="50%" height="40" align="left" valign="middle" style="padding: 8px;"><b>網際網路電話系統</b></td>
+                <td width="10%" align="center" valign="middle" style="padding: 8px;"><b>週三</b></td>
+                <td width="30%" align="center" valign="middle" style="padding: 8px; white-space: nowrap;"><b>2.3.4 節</b></td>
+				<td width="10%" height="40" align="right" valign="middle" style="padding: 8px; white-space: nowrap;"><b>N/A</b></td>
+            </tr>
+            <tr>
+                <td width="10%" height="40" align="center" valign="middle" style="padding: 8px;"><b>2.</b></td>
+                <td width="50%" height="40" align="left" valign="middle" style="padding: 8px;"><b>計算機概論</b></td>
+                <td width="10%" align="center" valign="middle" style="padding: 8px;"><b>N/A</b></td>
+                <td width="30%" align="center" valign="middle" style="padding: 8px; white-space: nowrap;"><b>N/A</b></td>
+				<td width="10%" height="40" align="right" valign="middle" style="padding: 8px; white-space: nowrap;"><b>綜202</b></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+</div>
+
 </div>
 
         <!-- Divider -->
@@ -124,52 +117,56 @@ Released   : 20131117
     <hr class="featurette-divider">
 </div>
 
+
+
 <!-- Footer -->
-<div id="footer" class="footer">
-    <div class="footer-content">
-        <p class="footer-text">
-            本網站著作權屬於宜蘭大學 資訊工程學系 VoIP Lab，請詳見:
-            <button class="footer-button" onclick="showPage(7)">使用規則</button>。
-        </p>
-        <p class="footer-contact">
-            <span>電話：(03) 935-7400, 0972-570030 分機7315</span> |
-            <span>Email: <a href="mailto:voiplab.niu@gmail.com">voiplab.niu@gmail.com</a></span>
-        </p>
-        <p class="footer-address">
-            地址：260宜蘭縣宜蘭市神農路一段1號 格致大樓，請詳見:
-            <button class="footer-button" onclick="showPage(8)">宜大校園地圖</button>
-        </p>
-		<p class="footer-address">
-           <span id="current-datetime"></span>
-        </p>
-        <p class="footer-address">
-           <span>&copy; Copyright 2024 NIU VoIP Lab. 建立於 2007/08</span>
-        </p>		
-    </div>    
+<div id="footer" class="footer" style="background-color: #f8f8f8; padding: 20px; font-family: 'Source Sans Pro', sans-serif; text-align: center; font-size: 1em;">
+    <div class="footer-content" style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
+        <!-- 文字內容 -->
+<div class="footer-text-content" style="flex: 1; padding-right: 20px; text-align: left;">
+    <p class="footer-text" style="margin: 10px 0; font-size: 1.1em; line-height: 1.5;">
+        本網站著作權屬於宜蘭大學 資訊工程學系 VoIP Lab，請詳見:
+        <a class="footer-button" href="use.html" style="color: #0066cc; text-decoration: none;">使用規則</a>
+    </p>
+    <p class="footer-text" style="margin: 10px 0; font-size: 1.1em; line-height: 1.5;">
+        地址：260宜蘭縣宜蘭市神農路一段1號 格致大樓，請詳見:
+        <a class="footer-button" href="map.html" style="color: #0066cc; text-decoration: none;">宜大校園地圖</a>
+    </p>
+    <p class="footer-contact" style="margin: 10px 0; font-size: 1.1em; line-height: 1.5;">
+        <span>電話：(03) 935-7400, 0972-570030 分機7315</span>
+    </p>
+    <p class="footer-contact" style="margin: 10px 0; font-size: 1.1em; line-height: 1.5;">
+        <span>Email: <a href="mailto:voiplab.niu@gmail.com" style="color: #0066cc; text-decoration: none;">voiplab.niu@gmail.com</a></span>
+    </p>
 </div>
+
+        <!-- Google 地圖嵌入 -->
+        <div class="footer-map" style="flex: 1;">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d905.8637026250477!2d121.74487616074191!3d24.745590631761317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3467e53784610ea7%3A0x2b30194cdd5ff11c!2z5ZyL56uL5a6c6Jit5aSn5a246Zu75qmf6LOH6KiK5a246Zmi!5e0!3m2!1szh-TW!2stw!4v1724739813598!5m2!1szh-TW!2stw" 
+                width="100%" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>	
+    </div> 
+	<p class="footer-address" style="margin: 10px 0; color: #666;">
+       &copy; Copyright 2024 NIU VoIP Lab. 建立於 2007/08
+    </p>	
+</div>
+	
+
+
+
+
+
+
 
 </body>
 
-<script>
-        function updateCurrentDateTime() {
-            const currentDateTimeElement = document.getElementById('current-datetime');
-            const now = new Date();
-            const year = now.getFullYear();
-            const month = (now.getMonth() + 1).toString().padStart(2, '0');
-            const day = now.getDate().toString().padStart(2, '0');
-            const hours = now.getHours().toString().padStart(2, '0');
-            const minutes = now.getMinutes().toString().padStart(2, '0');
-            const seconds = now.getSeconds().toString().padStart(2, '0');
-            const daysOfWeek = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
-            const dayOfWeek = daysOfWeek[now.getDay()];
-
-            const currentDateTimeString = `${year}-${month}-${day} ${hours}:${minutes}:${seconds} (${dayOfWeek})`;
-            currentDateTimeElement.textContent = currentDateTimeString;
-        }
-
-        updateCurrentDateTime();
-        setInterval(updateCurrentDateTime, 1000);
-     </script>
 
 
 <script type="text/javascript">
