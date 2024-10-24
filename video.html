@@ -83,13 +83,14 @@ Released   : 20131117
             </div>
         </li>
 		<li style="margin-bottom: 30px; border-bottom: 1px solid #e0e0e0; padding-bottom: 20px;">
-            <p style="font-size: 1.5em; color: #444; font-weight: 600; margin: 0;">豬隻活動</p>
-            <div class="video-container">
-                <video width="640" height="360" autoplay muted loop>
-				<source src="video/pig.mp4" type="video/mp4">
+			<p style="font-size: 1.5em; color: #444; font-weight: 600; margin: 0;">豬隻活動</p>
+			<div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
+				<video id="myVideo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" autoplay muted loop>
+					<source src="video/pig.mp4" type="video/mp4">
+					Your browser does not support the video tag.
 				</video>
-            </div>
-        </li>
+			</div>
+		</li>
 		
     </ul>
 </div>
@@ -211,4 +212,22 @@ Released   : 20131117
 	  $('.flexslider').flexslider();
 	});
 </script>
+
+<script>
+    const video = document.getElementById('myVideo');
+
+    // 在影片載入後恢復播放進度
+    video.addEventListener('loadedmetadata', function() {
+        const savedTime = localStorage.getItem('videoTime');
+        if (savedTime !== null) {
+            video.currentTime = parseFloat(savedTime);
+        }
+    });
+
+    // 每隔一段時間儲存當前播放時間
+    video.addEventListener('timeupdate', function() {
+        localStorage.setItem('videoTime', video.currentTime);
+    });
+</script>
+
 </html>
